@@ -8,6 +8,7 @@ function SignUpForm() {
       <Form.Group className="mb-3" controlId="formLoginEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
+        <Form.Text className="text-muted">We will never share your email with anyone else</Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formLoginPassword">
         <Form.Label>Password</Form.Label>
@@ -21,11 +22,11 @@ function SignUpForm() {
   );
 }
 
-function SignUpModal(props: { showStatus: boolean; handleClose: Function }) {
+function SignUpModal(props: { showStat: boolean; handleOpen: Function; handleClose: Function }) {
   return (
-    <Modal show={props.showStatus} onHide={props.handleClose()}>
+    <Modal show={props.showStat} onHide={() => props.handleClose()}>
       <Modal.Header closeButton>
-        <Modal.Title>Sign Up Form</Modal.Title>
+        <Modal.Title>Sign Up</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <SignUpForm />
