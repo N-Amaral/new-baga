@@ -1,6 +1,19 @@
-@import "bootstrap/scss/bootstrap";
+div.content {
+  min-height: 100vh;
+}
+
+.carouselImage {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.card-image {
+  height: 20vh;
+  object-fit: cover;
+}
 
 .footer-container {
   text-align: center;
-  background-color: red;
+  background-color: rgb(33, 37, 41);
+  color: rgba(255, 255, 255, 0.55);
 }

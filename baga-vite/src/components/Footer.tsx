@@ -1,6 +1,4 @@
-import { Container } from "react-bootstrap";
-
-const Footer = () => {
+function Footer() {
   const currentYear = () => {
     const date = new Date();
     return date.getFullYear();
@@ -8,12 +6,12 @@ const Footer = () => {
 
   return (
     <footer id="footer-End" className="">
-      <Container className="footer-container">
+      <div className="footer-container">
         &copy;
         <small>{`Baga ${currentYear()}`}</small>
-      </Container>
+      </div>
     </footer>
   );
-};
+}
 
 export default Footer;
