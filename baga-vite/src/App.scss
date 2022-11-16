@@ -9,11 +9,49 @@ div.content {
 
 .card-image {
   height: 20vh;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .footer-container {
   text-align: center;
   background-color: rgb(33, 37, 41);
   color: rgba(255, 255, 255, 0.55);
+}
+
+//user details page
+
+.userCard {
+  height: auto;
+  padding: 1rem;
+  width: 30rem;
+  border: 3px solid black;
+  display: grid;
+  justify-content: center;
+}
+.userCardBody {
+  height: 30vh;
+  width: 10vw;
+  border: 3px solid blue;
+  display: grid;
+  justify-content: center;
+}
+.userCardBody > span {
+  padding: 1rem;
+}
+.userCardImage {
+  margin: 1rem 0 1rem 0;
+  height: 20vh;
+  width: 10vw;
+  border: 3px solid red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.userCardImage > span {
+  width: inherit;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  text-align: center;
 }
